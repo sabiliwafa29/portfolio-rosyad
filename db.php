@@ -1,5 +1,5 @@
 <?php
-$servername = "server.rosyad.studio";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "user_port";
