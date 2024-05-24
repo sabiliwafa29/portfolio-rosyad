@@ -104,9 +104,26 @@
                         <p>Sudah banyak tugas dan sulit untuk menceritakan yang banyak terjadi di perkuliahan</p>
                     </div>
                 </div>
+                
+                <div class="card" style="margin-top: 20px; margin-bottom: 20px;">  
+                    <div class="box">
+                        <form action="submit.php" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">No Telepon:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
+    </section>
 </body>
 
 </html>
