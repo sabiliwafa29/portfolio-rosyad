@@ -1,7 +1,7 @@
 <?php
-$servername = "server-01";
+$servername = "213.35.117.246";
 $username = "root";
-$password = "";
+$password = "siwawafa";
 $dbname = "user_port";
 
 // Membuat koneksi
