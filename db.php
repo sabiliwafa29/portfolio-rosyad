@@ -1,5 +1,5 @@
 <?php
-$servername = "213.35.117.246";
+$servername = "server.rosyad.studio";
 $username = "root";
 $password = "";
 $dbname = "user_port";
