@@ -1,7 +1,7 @@
 <?php
-$servername = "213.35.117.246";
-$username = "root";
-$password = "siwawafa";
+$servername = "localhost";
+$username = "siwa04";
+$password = "passwd29";
 $dbname = "user_port";
 
 // Membuat koneksi
@@ -11,5 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
+echo "Connected successfully";
+
 ?>
 

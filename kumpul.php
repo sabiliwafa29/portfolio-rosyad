@@ -6,11 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $telepon = $_POST['telepon'];
 
-    // Menyiapkan statement SQL untuk insert data
-    $sql = "INSERT INTO nama_tabel (username, telepon) VALUES (?, ?)";
-
     // Mempersiapkan prepared statement
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn->prepare("INSERT INTO users (username, telepon) VALUES (?, ?)");
     $stmt->bind_param("ss", $username, $telepon);
 
     // Menjalankan prepared statement
