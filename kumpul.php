@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Menjalankan prepared statement
     if ($stmt->execute()) {
-        echo "Data berhasil disimpan.";
+        echo "<script>if(Notification.permission === 'granted') { new Notification('Notifikasi', { body: 'Data berhasil disimpan.' }); } else if(Notification.permission !== 'denied') { Notification.requestPermission().then(permission => { if(permission === 'granted') { new Notification('Notifikasi', { body: 'Data berhasil disimpan.' }); } }); }</script>";
     } else {
         echo "Error: " . $stmt->error;
     }
